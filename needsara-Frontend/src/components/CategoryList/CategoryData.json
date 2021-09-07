@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Pest Control",
+        "image": ""
+    },
+    {
+        "id": 2,
+        "name": "Plumber",
+        "image": ""
+    },
+    {
+        "id": 3,
+        "name": "Salon for Men",
+        "image": ""
+    },
+    {
+        "id": 4,
+        "name": "Salon for Women",
+        "image": ""
+    },
+    {
+        "id": 5,
+        "name": "Appliance Repair",
+        "image": ""
+    },
+    {
+        "id": 6,
+        "name": "Carpenter",
+        "image": ""
+    },
+    {
+        "id": 7,
+        "name": "Sanitization & Disinfection",
+        "image": ""
+    },
+    {
+        "id": 8,
+        "name": "Electrician",
+        "image": ""
+    },
+    {
+        "id": 9,
+        "name": "House Cleaning",
+        "image": ""
+    },
+    {
+        "id": 10,
+        "name": "Painter",
+        "image": ""
+    }
+]

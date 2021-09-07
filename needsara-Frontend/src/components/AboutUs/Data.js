@@ -1,0 +1,15 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'About Us',
+    headline: 'Who are We',
+    description: 'Needsara is a digital platform for providing local service in India. Needsara focuses on expert services clustered around Home, Life and Self and where the user need is customized. Using technology and domain intelligence, the platform seeks to understand the user need in detail and matches it to verified Local service providers.',
+    buttonLabel: 'Know more',
+    imgStart: false,
+    alt: 'Not Avialable',
+    dark: false,
+    primary: false,
+    darkText: true,
+}

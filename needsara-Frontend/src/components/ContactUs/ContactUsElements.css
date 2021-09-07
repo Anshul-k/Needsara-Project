@@ -1,0 +1,8 @@
+.Input_area:focus + .label, .Input_area:valid + .label {
+    top: -1px;
+    font-size: 0.8rem;
+    left: 25px;
+    transform: translateY(-50%);
+    background: #1abc9c;
+    border: 80px;
+}
