@@ -99,10 +99,6 @@ app.get('/category', function(req,res){
 
 
 
-app.get('/', (req, res) => {
-    res.send("Hello World")
-    // res.send(database.users);
-});
 
 // For User to signin using credentials
 app.post('/signin_user', async(req, res) => {
