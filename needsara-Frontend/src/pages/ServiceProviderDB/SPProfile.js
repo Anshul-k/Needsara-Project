@@ -197,7 +197,7 @@ const SPProfile = () => {
     }
       // function to update password 
       function onSubmitUpdate(event){
-        fetch('http://localhost:3000/admin_data',{
+        fetch('/admin_data',{
         method: 'put',
         headers: {
             'Content-Type':'application/json',

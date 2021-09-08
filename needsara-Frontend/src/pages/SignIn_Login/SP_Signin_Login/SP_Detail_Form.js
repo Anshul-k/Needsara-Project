@@ -139,17 +139,6 @@ const SPDetailForm = () => {
             ?
             <CenterStepper>
                 <H1>Enter Your Details</H1>
-                {/*<Stepper style={{width: '70%'}} activeStep= {currentStep-1} orientation="horizontal">
-                        <Step>
-                            <StepLabel></StepLabel>
-                        </Step>
-                        <Step>
-                            <StepLabel></StepLabel>
-                        </Step>
-                        <Step>
-                            <StepLabel></StepLabel>
-                        </Step>
-                    </Stepper>*/}
                 <Stepper alternativeLabel style={{width: '90%'}} activeStep={currentStep-1} connector={<ColorlibConnector />}>
                     <Step>
                         <StepLabel StepIconComponent={ColorlibStepIcon}></StepLabel>

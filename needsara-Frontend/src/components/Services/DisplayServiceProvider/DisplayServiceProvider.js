@@ -110,7 +110,7 @@ const ButtonContainer = styled.div`
 // // // // // // // // // // // // Updating Service Provider details // // // // // // // // // // // //
       // Submitting the Register form
       function onSubmitSelect(value){
-        fetch('http://localhost:3000/user_requests',{
+        fetch('/user_requests',{
           method: 'put',
           headers: {
             'Content-Type':'application/json',
@@ -141,7 +141,7 @@ const ButtonContainer = styled.div`
 // // // // // // // // // // // // Sending SMS to Service provider // // // // // // // // // // // //
       // Submitting the Register form
       function onSubmitTextMessage(value){
-        fetch('http://localhost:3000/send-text',{
+        fetch('/send-text',{
           method: 'post',
           headers: {
             'Content-Type':'application/json',

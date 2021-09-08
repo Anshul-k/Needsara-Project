@@ -175,7 +175,7 @@ const CusProfile = () => {
     
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3000/user')
+        axios.get('/user')
             .then(res=>{
                 console.log(res.data)
                 setPosts(res.data)
@@ -206,7 +206,7 @@ const CusProfile = () => {
     }
       // function to update password 
       function onSubmitUpdate(event){
-        fetch('http://localhost:3000/user_data',{
+        fetch('/user_data',{
         method: 'put',
         headers: {
             'Content-Type':'application/json',
@@ -253,7 +253,7 @@ const CusProfile = () => {
                     <ProfileDetails>
                         <h4>{post.userName}</h4>
                         <ProfileRow>
-                            <form action="http://localhost:3001/user/profile" method="post" encType="multipart/form-data">
+                            <form action="/user/profile" method="post" encType="multipart/form-data">
                                 <div><input type="file" name="image" id="image"/></div>
                                 <ColorButton type="submit" variant="contained" color="primary" className={classes.margin} >
                                     Upload Picture

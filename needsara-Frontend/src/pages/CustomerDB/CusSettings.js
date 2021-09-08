@@ -93,7 +93,7 @@ const CusSettings = () => {
       function onSubmitUpdate(event){
         if(UpdateData.updateUserName===localStorage.getItem('User')){
             if(UpdateData.updatePassword===UpdateData.updateConfirmPassword){
-                fetch('http://localhost:3000/user',{
+                fetch('/user',{
                 method: 'put',
                 headers: {
                     'Content-Type':'application/json',

@@ -18,15 +18,6 @@ const Services = () => {
     return (
         <ServicesContainer id="services">
             <ServicesH1>Our Services</ServicesH1>
-           {/* <ServicesWrapper>
-            {ServiceData.slice(0,3).map((item) => (       
-                <Card
-                    image={`${item.image}`}
-                    title={item.title}
-                    body={item.body}
-                />  
-            ))}
-            </ServicesWrapper> */}
             <ServicesWrapper>
                 <Card
                     image={applianceRepair}

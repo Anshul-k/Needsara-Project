@@ -213,7 +213,7 @@ function List_Your_Business (history) {
       function onSubmitRegister(event){
         if(registerData.RegisterPassword===registerData.RegisterConfirmPassword){
           event.preventDefault()
-        fetch('http://localhost:3000/register_admin',{
+        fetch('/register_admin',{
           method: 'post',
           headers: {'Content-Type':'application/json'},
           body: JSON.stringify({

@@ -35,7 +35,7 @@ function UserSignInLogin (history) {
     // Submitting the Signin form
     function onSubmitSignIn(event){
       event.preventDefault()
-      fetch('http://localhost:3000/signin_user',{
+      fetch('/signin_user',{
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
@@ -75,7 +75,7 @@ function UserSignInLogin (history) {
       function onSubmitRegister(event){
         if(registerData.RegisterPassword===registerData.RegisterConfirmPassword){
           event.preventDefault()
-        fetch('http://localhost:3000/register_user',{
+        fetch('/register_user',{
           method: 'post',
           headers: {'Content-Type':'application/json'},
           body: JSON.stringify({

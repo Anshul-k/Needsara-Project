@@ -172,7 +172,7 @@ function ServiceSearchForm() {
       function onSubmitRequest(event){
         if(requestData.RequestPinCode && requestData.RequestCategory && requestData.RequestAddress && requestData.RequestDistrict && requestData.RequestRange && requestData.RequestDescription && requestData.RequestPhoneNumber){
         event.preventDefault()
-        fetch('http://localhost:3000/user_requests',{
+        fetch('/user_requests',{
           method: 'post',
           headers: {'Content-Type':'application/json'},
           body: JSON.stringify({

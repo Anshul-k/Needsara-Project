@@ -9,7 +9,7 @@ const StepContext = () => {
 // // // // // // // // // // // // REGISTER Connect Start// // // // // // // // // // // //
       // Submitting the Register form
       function onSubmitRegister(event){
-        fetch('http://localhost:3000/register_admin',{
+        fetch('/register_admin',{
           method: 'put',
           headers: {
             'Content-Type':'application/json',

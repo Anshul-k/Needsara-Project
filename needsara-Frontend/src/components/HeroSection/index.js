@@ -1,18 +1,13 @@
 import React from 'react';
 import Video from '../../videos/video.mp4';
-// import {FiSearch} from 'react-icons/fi'
 import Typewriter from 'typewriter-effect'
 import {
     HeroContainer, 
     HeroBg, 
     VideoBg, 
     HeroContent,
-    // SearchboxContainer,
-    // SearchboxIcon,
-    // Searchbox, 
     HeroH1,
     } from './HeroElements';
-// import Category from '../CategoryList/categroyList'
 
 const HeroSection = () => {
     return (
@@ -32,15 +27,6 @@ const HeroSection = () => {
                     cursorClassName: "Typewriter__cursor",
                   }}
                 />
-                {/*<SearchboxContainer>
-                    <Searchbox
-                    placeholder="Search here for Services">
-                    </Searchbox>
-                    <SearchboxIcon>
-                        <FiSearch/>
-                    </SearchboxIcon>
-                </SearchboxContainer>
-                */}
             </HeroContent>
         </HeroContainer>
     )

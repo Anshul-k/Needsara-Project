@@ -115,7 +115,7 @@ const ColorButton = withStyles(() => ({
 // // // // // // // // // // // // Updating Service Provider Details // // // // // // // // // // // //
       // updating the status of user request
       function onSubmitAccepted(){
-        fetch('http://localhost:3000/user_requests_accepted',{
+        fetch('/user_requests_accepted',{
           method: 'put',
           headers: {
             'Content-Type':'application/json',
@@ -133,7 +133,7 @@ const ColorButton = withStyles(() => ({
 // // // // // // // // // // // // Sending SMS to User // // // // // // // // // // // //
       // Sending a Request declined message to the user
       function onSubmitTextMessageRejected(value){
-        fetch('http://localhost:3000/send-text-user',{
+        fetch('/send-text-user',{
           method: 'post',
           headers: {
             'Content-Type':'application/json',
@@ -149,7 +149,7 @@ const ColorButton = withStyles(() => ({
       }
       // Sending a Request Accepted message to the user
       function onSubmitTextMessageAccepted(value){
-        fetch('http://localhost:3000/send-text-userAccepted',{
+        fetch('/send-text-userAccepted',{
           method: 'post',
           headers: {
             'Content-Type':'application/json',
@@ -167,7 +167,7 @@ const ColorButton = withStyles(() => ({
 // // // // // // // // // // // // Deleting the Request // // // // // // // // // // // //
       // deleting the user request
       function onDecline(value){
-        fetch('http://localhost:3000/user_requests',{
+        fetch('/user_requests',{
           method: 'delete',
           headers: {
             'Content-Type':'application/json',
@@ -255,7 +255,7 @@ const SPDashboard = () => {
     // Getting All the Request Data
     const [requestData, setRequestData] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3000/user_requests')
+        axios.get('/user_requests')
             .then(res=>{
                 console.log(res)
                 setRequestData(res.data)

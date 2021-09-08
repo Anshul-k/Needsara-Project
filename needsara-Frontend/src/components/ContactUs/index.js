@@ -60,7 +60,7 @@ const ContactUs = () => {
     // Submitting the Contact form
     function onSubmitContact(event){
       event.preventDefault()
-      fetch('http://localhost:3000/contactus',{
+      fetch('/contactus',{
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({

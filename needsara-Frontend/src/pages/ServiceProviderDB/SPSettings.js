@@ -93,7 +93,7 @@ const SPSettings = () => {
       function onSubmitUpdate(event){
         if(UpdateData.updateUserName===localStorage.getItem('Admin')){
             if(UpdateData.updatePassword===UpdateData.updateConfirmPassword){
-                fetch('http://localhost:3000/admin',{
+                fetch('/admin',{
                 method: 'put',
                 headers: {
                     'Content-Type':'application/json',

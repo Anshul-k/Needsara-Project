@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll'
-// import ExpandedSearchbox from './ExpandedSearchbox'
 import NavbarVideo from '../../videos/NavbarVideo1.mp4'
 import { 
 	Nav, 
@@ -15,7 +14,6 @@ import {
 	NavLinkR,
 	NavBtn,
 	NavBtnLink,
-	// SearchBoxFaBars
 } from './NavbarElements'
 
 const Navbar = ( {toggle} ) => {
@@ -39,20 +37,6 @@ const Navbar = ( {toggle} ) => {
 		scroll.scrollToTop()
 	}
 
-	// For Seacrhbar scroll
-	// const [searchboxIcon, setSearchboxIcon] = useState(false)
-	// const changeSearchboxIcon = () => {
-	// 	if(window.scrollY >= 340){
-	// 		setSearchboxIcon(true)	
-	// 	} else {
-	// 		setSearchboxIcon(false)
-	// 	}
-	// }
-	// useEffect(() => {
-	// 	window.addEventListener('scroll', changeSearchboxIcon)
-	// }, [])
-
-
 	return (
 	<React.Fragment>
 		<Nav scrollNav={scrollNav}>
@@ -60,26 +44,10 @@ const Navbar = ( {toggle} ) => {
 				<NavVideoContainer onClick={toggleHome}>
 					<NavVideo autoPlay loop muted src={NavbarVideo} type='video/mp4' />
 				</NavVideoContainer>
-				{/*<NavLogo to='/' onClick={toggleHome}>Needsara</NavLogo>*/}
 				<MobileIcon onClick={toggle}>
-					
-						{/* searchboxIcon === true 
-							?
-							<SearchBoxFaBars>
-								<ExpandedSearchbox/>
-							</SearchBoxFaBars>
-							:
-							null
-						*/}
 						<FaBars/>
 				</MobileIcon>
 				<NavMenu>
-					{/* searchboxIcon === true 
-						?
-						<ExpandedSearchbox/>
-						:
-						null
-					*/}
 					<NavItem>
 						<NavLinkR to="/signup_admin"
 						smooth={true} duration={500} spy={true} exact='true' offset={-80}

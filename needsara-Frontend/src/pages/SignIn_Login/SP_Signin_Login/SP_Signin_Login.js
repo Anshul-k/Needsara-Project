@@ -174,7 +174,7 @@ function SPSigninLogin(){
     // Submitting the Signin form
     function onSubmitSignIn(event){
       event.preventDefault()
-      fetch('http://localhost:3000/signin_admin',{
+      fetch('/signin_admin',{
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({

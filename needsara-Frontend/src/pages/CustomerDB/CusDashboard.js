@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
-// import { Link } from 'react-router-dom'
 import CustDBLayout from '../../components/Dashboard/CustomerDB/CustDBLayout'
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
@@ -11,7 +10,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-// import { CardContent, Grid, LinearProgress } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import dateFormat from 'dateformat';
@@ -40,50 +38,6 @@ const TabContainer = styled.div`
     margin: 5rem;
   }
 `
-// const CardContainer = styled.div`
-//     color: rgba(0, 0, 0, 0.87);
-//     margin: 1rem;
-//     width: 900px;
-//     border: 0;
-//     display: flex;
-//     position: relative;
-//     font-size: .875rem;
-//     min-width: 0;
-//     word-wrap: break-word;
-//     background: #FFF;
-//     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
-//     margin-top: 6rem;
-//     border-radius: 6px;
-//     margin-bottom: 30px;
-//     flex-direction: column;
-
-//     @media (max-width: 1080px){
-//     margin: 6rem;
-//   }
-// `
-// const CardHeader = styled.div`
-//     padding: 1rem;
-//     margin: -20px 25px 0 25px;
-//     border-radius: 10px;
-//     background: linear-gradient(60deg, #01bf71, #00A461);
-//     box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14), 0 7px 10px -5px rgb(156,39,176,0.4);
-//     color: #fff;
-//     position: relative;
-// `
-// const PprofileInfoContainer = styled.div`
-//   padding: 0.5rem;
-// `
-// const ProfileCompletion = styled.div`
-
-// `
-// const LinkTo = styled(Link)`
-//   text-decoration: none;
-//   color: inherit;
-
-//   :hover{
-//     color: #01bf71;
-//   }
-// `
 const RequestContainer = styled.div`
   padding: 0;
 `
@@ -174,46 +128,10 @@ const ColorButton = withStyles(() => ({
 }))(Button);
 // // // // // // // // // // // Styled Components End // // // // // // // // // // //
 
-// const TasksProgress = () => (
-//     <CardContent>
-//         <Grid
-//           container
-//           sx={{ justifyContent: 'space-between' }}
-//         >
-//           <Grid item>
-//             <Typography
-//               color="textSecondary"
-//               gutterBottom
-//               variant="h6"
-//             >
-//               Profile Completed
-//             </Typography>
-//             <Typography
-//               color="textPrimary"
-//               variant="h3"
-//             >
-//               20%
-//             </Typography>
-//           </Grid>
-//         </Grid>
-//         <Box sx={{ pt: 3 }}>
-//           <LinearProgress
-//             value={20}
-//             variant="determinate"
-//           />
-//         </Box>
-//         <Typography
-//               color="textPrimary"
-//               variant="subtitle1"
-//             >
-//               <LinkTo to="/user/profile">Click Here </LinkTo>to complete your profile details
-//             </Typography>
-//     </CardContent>
-//   );
 // // // // // // // // // // // // Updating Service Provider Details // // // // // // // // // // // //
       // updating the status of user request
       function onSubmitCompleted(){
-        fetch('http://localhost:3000/user_requests_completed',{
+        fetch('/user_requests_completed',{
           method: 'put',
           headers: {
             'Content-Type':'application/json',
@@ -231,7 +149,7 @@ const ColorButton = withStyles(() => ({
 // // // // // // // // // // // // Deleting the user Request // // // // // // // // // // // //
       // deleting the user request
       function onSubmitCancelrequest(value){
-        fetch('http://localhost:3000/user_requests',{
+        fetch('/user_requests',{
           method: 'delete',
           headers: {
             'Content-Type':'application/json',
@@ -415,15 +333,6 @@ const Dashboard = () => {
                       </SwipeableViews>
                     </div>
                 </TabContainer>
-                {/*<CardContainer>
-                    <CardHeader>
-                    </CardHeader>
-                    <PprofileInfoContainer>
-                      <ProfileCompletion>
-                        <TasksProgress/>
-                      </ProfileCompletion>
-                    </PprofileInfoContainer>
-                </CardContainer> */}  
             </DashboardContainer>
         )
 }
