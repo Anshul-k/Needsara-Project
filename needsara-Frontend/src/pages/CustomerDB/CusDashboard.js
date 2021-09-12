@@ -235,7 +235,7 @@ const Dashboard = () => {
     // Getting All the Request Data
     const [requestData, setRequestData] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3000/user_requests')
+        axios.get('/user_requests')
             .then(res=>{
                 console.log(res)
                 setRequestData(res.data)
