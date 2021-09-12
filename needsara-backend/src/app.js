@@ -343,7 +343,7 @@ app.delete('/user_requests', async(req,res,next) =>{
     }
 })
 // Getting All Users
-app.get('/user', function(req, res){
+app.get('/users', function(req, res){
     let posts = UserDetails.find({}, function(err, posts){
         if(err){
             console.log(err);

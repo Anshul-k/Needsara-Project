@@ -175,7 +175,7 @@ const CusProfile = () => {
     
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        axios.get('/user')
+        axios.get('/users')
             .then(res=>{
                 console.log(res.data)
                 setPosts(res.data)

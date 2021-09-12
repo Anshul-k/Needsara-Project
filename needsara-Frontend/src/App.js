@@ -30,7 +30,7 @@ function App() {
         <Route path="/contactus" component={Contact_Us} exact/>
         <Route path="/aboutUsPage" component={AboutUsPage} exact/>
         <Route path="/ourTeamPage" component={OurTeamPage} exact/>
-        <Route path="/users" component={CustomerDashboard} exact/>
+        <Route path="/user" component={CustomerDashboard} exact/>
         <Route path="/user/dashboard" component={CustomerDashboard} exact/>
         <Route path="/user/profile" component={CusProfile} exact/>
         <Route path="/user/settings" component={CusSettings} exact/>
