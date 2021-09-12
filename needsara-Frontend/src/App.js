@@ -30,10 +30,10 @@ function App() {
         <Route path="/contactus" component={Contact_Us} exact/>
         <Route path="/aboutUsPage" component={AboutUsPage} exact/>
         <Route path="/ourTeamPage" component={OurTeamPage} exact/>
-        <Route path="/user" component={CustomerDashboard} exact/>
-        <Route path="/user/dashboard" component={CustomerDashboard} exact/>
-        <Route path="/user/profile" component={CusProfile} exact/>
-        <Route path="/user/settings" component={CusSettings} exact/>
+        <Route path="/user_" component={CustomerDashboard} exact/>
+        <Route path="/user_/dashboard" component={CustomerDashboard} exact/>
+        <Route path="/user_/profile" component={CusProfile} exact/>
+        <Route path="/user_/settings" component={CusSettings} exact/>
         <Route path="/signup_admin" component={ListYourBusiness} exact/>
         <Route path="/signin_user" component={User_SignIn_Login} exact/>
         <Route path="/signin_admin" component={SPSigninLogin} exact/>
