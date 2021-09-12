@@ -212,7 +212,7 @@ const DisplayServiceProvider = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3000/user_requests_api')
+        axios.get('/user_requests_api')
             .then(res=>{
                 console.log(res)
                 setPosts(res.data)
